@@ -1,16 +1,8 @@
 //Agregando DOM al proyecto / lo hice en otra página para que quedara mas prolijo
 
-//Aqúi agregué elementos al HTML y también Modifico 
+//Aquí agrego un titulo de bienvenida
 let titulo = document.getElementById("titulo");
 titulo.innerText="TUS ACCESORIOS FAVORITOS LOS ENCUENTRAS AQUÍ !";
-
-let texto = document.getElementById("texto");
-texto.className= "texto1";
-texto.innerHTML = "<h2>Estamos procesando tu pedido... </h2>";
-
-/* let comentario = document.getElementById("comentario");
-comentario.className="comentario3";
-comentario.innerHTML="Gracias por tu compra! Tus productos serán despachados a la brevedad."; */
 
 //interactuación con un array para opciones de despacho 
 

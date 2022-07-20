@@ -83,20 +83,10 @@ const FinalizarCompra= ()=>{
     const compraConcretada=`<div class="compra-concretada">
                             <p class="textoCompra"> Estás a un paso de finalizar tu compra! </p>
                             <button class="btn Finalizar"><a href="./compra.html"> Finalizar Compra </button>
-                           
-                            <div class="datosCliente">
-                                <p class="datos-envío"> Ingrese Los Datos de envío </p>
-                                <button class="btn formulario" id="formulario" onClick="crearFormulario()"> FORMULARIO DE ENVÍO </button>
-                            </div>`;
+                           `;
     armarCarro.innerHTML=compraConcretada;
 };
 
-const crearFormulario= ()=>{
-    armarCarro.innerHTML="";
-    const formulario=``
-}
-
-//aquí termina el formulario 
 
 const infoStorage = (carro)=>{
     localStorage.setItem("carro",JSON.stringify(carro))
