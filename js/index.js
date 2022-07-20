@@ -8,9 +8,9 @@ let texto = document.getElementById("texto");
 texto.className= "texto1";
 texto.innerHTML = "<h2>Estamos procesando tu pedido... </h2>";
 
-let comentario = document.getElementById("comentario");
+/* let comentario = document.getElementById("comentario");
 comentario.className="comentario3";
-comentario.innerHTML="Gracias por tu compra! Tus productos serán despachados a la brevedad.";
+comentario.innerHTML="Gracias por tu compra! Tus productos serán despachados a la brevedad."; */
 
 //interactuación con un array para opciones de despacho 
 
@@ -33,10 +33,10 @@ const productos = [{id:1 ,nombre:"Conjunto accesorios en tonos Morado", imagen:"
                 ];
 boton.addEventListener("click", function(){
  for (const producto of productos) {
-        const contenedor = document.getElementById("tarjetas");
-        let tarjetas = document.createElement("div");
-        tarjetas.className= "col-3";
-        tarjetas.innerHTML = `<div class="card" >
+        const contenedor = document.getElementById("tarjetasExtra");
+        let tarjetasExtra = document.createElement("div");
+        tarjetasExtra.className= "col-3";
+        tarjetasExtra.innerHTML = `<div class="card" >
                                 <img src="./multimedia/${producto.imagen}" class="card-img-top" alt="ConjuntoMorado"></img>
                                 <div class="card-body">
                                 <h5 class="card-title">ID: ${producto.id}</h5>
@@ -45,7 +45,7 @@ boton.addEventListener("click", function(){
                                 <a href="#" class="btn btn-primary">Agregar</a>
                                 </div>
                              </div>`;
-contenedor.appendChild(tarjetas);
+contenedor.appendChild(tarjetasExtra);
 }      
 });
       

@@ -1,4 +1,4 @@
-
+/*
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ main{
     background-size: cover;
 }
 nav{
-    background-color:rgb(199, 110, 110);
-    color: white;
+    background-color:#b08e6b;
+    color: #f5e1ce;
     height: 80px;
 }
 .texto-nav{
@@ -68,4 +68,41 @@ footer{
     display: flex;
     justify-content:space-around;
     
+}
+
+/*--ediciones del carrito de js-- */
+
+/*---Empezando desde 0 ---*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #bf9780;
+}
+.carro{
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 100px;
+    background-color: #bf9780;
+}
+.producto-carro{
+    display: flex;
+    align-items: center;
+    
+}
+.contenido-carro{
+    margin: 20px;
+    width: 90px;
+    width: 180px;
+}
+.img-carro{
+    height: 70px;
+    width: 70px;
+
+}
+.btn{
+    background-color: #f5e1ce;
 }
