@@ -1,3 +1,4 @@
+// nav
 const navegador = document.getElementById("navegador");
 let nav= document.createElement("nav");
 nav.classList="navbar navbar-light  fixed-top";
@@ -39,3 +40,8 @@ nav.innerHTML = `
                 </div>
             `;
 navegador.appendChild(nav);
+
+
+//Titulo de bienvenida
+let titulo = document.getElementById("titulo");
+titulo.innerText="TUS ACCESORIOS FAVORITOS LOS ENCUENTRAS AQUÍ !";

@@ -29,17 +29,6 @@ const finalCompra = ()=>{
     formulario.appendChild(datos);
 };
  
-/*
-let despacho = document.getElementById("comunas");
-let comunas = ["Talagante","Isla de Maipo","El Monte","Peñaflor"];
-
-for (let comuna of comunas){
-    var elemento = document.createElement("li");
-    elemento.innerHTML = comuna;
-    despacho.appendChild(elemento);
-};
-
-*/
 const mensajeFinal = ()=>{
     
     const cliente=document.getElementById("nombre").value;
