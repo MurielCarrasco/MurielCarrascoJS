@@ -1,78 +1,12 @@
 /*
-*{
-    margin: 0;
-    padding: 0;
-}
-main{
-    background-image: url(../multimedia/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-nav{
-    background-color:#b08e6b;
-    color: #f5e1ce;
-    height: 80px;
-}
-.texto-nav{
-    font-size: 32px;
-
-}
-.titulo1 {
-    text-align: center;
-    color: rgb(199, 110, 110);
-    height: 80px;
-}
-.texto1{
-    margin: 20px;
-    font-size: 32px;
-    text-align: center;
-    color: rgb(199, 110, 110);
-    height: 80px;
-    
-}
-.elec-comunas{
-    text-align: center;
-    color: rgb(199, 110, 110);
-    height: 80px;
-    height: 150px; 
-}
-#comunas{
-    list-style: none;
-}
 .comentario3   {
     text-align: center;
     font-size: 28px;
     color: rgb(199, 110, 110);
     height: 100px;
     align-content: center;
-}
-h4{
-    color:rgb(199, 110, 110) ;
-    margin-left: 50px;
-}
-.btn{
-   background-color: rgb(199, 110, 110) ;
-   width: 90px;
-   margin:30px 0 50px 100px;
-}
-footer{
-    background-color:rgb(199, 110, 110);
-    color: white;
-    height: 80px;
-}
-.Redes{
-    font-size: 30px;
-    margin-left: 40px ;
-}
-.iconos{
-    display: flex;
-    justify-content:space-around;
-    
-}
+}*/
 
-/*--ediciones del carrito de js-- */
-
-/*---Empezando desde 0 ---*/
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
 
 *{
@@ -82,11 +16,24 @@ footer{
 .navbar{
     background-color: #bf9780;
 }
+.card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.totalCompra{
+    
+    text-align: center;
+}
+.card img{
+    width: 80%;
+    margin-top: 10px;
+}
 .carro{
     width: 1000px;
     margin-left: 200px;
     margin-top: 100px;
-    background-color: #bf9780;
+    background-color: #d8af97;
 }
 .producto-carro{
     display: flex;
@@ -105,4 +52,77 @@ footer{
 }
 .btn{
     background-color: #f5e1ce;
+}
+main{
+    background-image: url(../multimedia/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo1 {
+    text-align: center;
+    color: rgb(199, 110, 110);
+    height: 80px;
+}
+.elec-comunas{
+    text-align: center;
+    color: rgb(199, 110, 110);
+    height: 80px;
+    height: 150px; 
+}
+#comunas{
+    list-style: none;
+}
+h4{
+    color:rgb(199, 110, 110) ;
+    margin-left: 50px;
+}
+footer{
+    background-color:#bf9780;
+    color: white;
+    height: 80px;
+}
+.Redes{
+    font-size: 30px;
+    margin-left: 40px ;
+}
+.iconos{
+    display: flex;
+    justify-content:space-around;
+    
+}
+.masOpciones{
+    height: 150px;
+}
+.btn-extra{
+    display: flex;
+    justify-content: center;
+}
+.boton-extra{
+    background-color:#bf9780 ;
+}
+.compra-concretada{
+    display: inline-block;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    
+}
+#finalizandoCompra{
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(199, 110, 110);
+}
+.btn-formu{
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+.formu{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  padding: .5rem;
 }

@@ -17,7 +17,7 @@ productos.forEach((producto, catalogo)=>{
     let index= `<img src="${producto.imagen}" class="card-img-top" alt="${producto.descripcion}">
                <div class="card-body">
                 <h5 class="card-title">${producto.descripcion}</h5>
-                <p class="card-text">$ ${producto.precio}</p>
+                <p class="card-text"> Valor $ ${producto.precio}</p>
                 <a href="#" class="btn" onClick="comprar(${catalogo})" >Agregar al carro</a>
                </div>`
     tarjeta.innerHTML=index;
@@ -31,7 +31,7 @@ const bosquejoCarro= ()=>{
     armarCarro.innerHTML="";
     if(carro.length > 0 ){
         carro.forEach((producto, catalogo) =>{
-            total = total + producto.precio + producto.cantidad ;
+            total = total + producto.precio * producto.cantidad ;
             const carroDetalle=document.createElement("div");
             carroDetalle.className = "producto-carro"
             carroDetalle.innerHTML = `<img src="${producto.imagen}" class="img-carro">
@@ -45,11 +45,12 @@ const bosquejoCarro= ()=>{
         const totalCompra= document.createElement("div");
         totalCompra.className="totalCompra";
         totalCompra.innerHTML=`<div class="total"> TOTAL A PAGAR $ ${total}</div>
-                            <button class="btn Finalizar" id="finalizar" onClick="FinalizarCompra()"> FINALIZAR COMPRA </button>`;
-        armarCarro.appendChild(totalCompra);   
+        <a href="./compra.html" class="btn Finalizar"> Finalizar Compra</a>`;
+        armarCarro.appendChild(totalCompra);  
+
     } else {
         armarCarro.classList.remove("carro");
-    }                  
+    };                  
 };
 
 let carro=[];
@@ -63,17 +64,18 @@ const comprar=(catalogo)=>{                              //con esta función ver
         carro.push(agregarnuevo);
         infoStorage(carro);
         bosquejoCarro()
+        
     }else {                                               // aquí le digo: Si hay el producto está en el carro suma 1 
        carro[catalogoCarro].cantidad +=1;
        infoStorage(carro);
-       armarCarro();
+       bosquejoCarro()
     };
 };
 
 const eliminarProducto= (catalogo)=>{
     carro.splice(catalogo, 1);
     infoStorage(carro);
-    armarCarro();
+    bosquejoCarro()
 };
 
 //ESTA FUNCION DE FINALIZAR COMPRA Y LLENAR FORMULARIO ENVIARLA DESPUÉS A OTRA PÁGINA 
@@ -82,12 +84,11 @@ const FinalizarCompra= ()=>{
     armarCarro.innerHTML="";                                                        // Esto hace que desaparezca el carro para que aparezca el mensaje siguiente
     const compraConcretada=`<div class="compra-concretada">
                             <p class="textoCompra"> Estás a un paso de finalizar tu compra! </p>
-                            <button class="btn Finalizar"><a href="./compra.html"> Finalizar Compra </button>
-                           `;
+                            <a href="./compra.html" class="btn Finalizar"> Finalizar Compra</a>`;
     armarCarro.innerHTML=compraConcretada;
 };
 
 
 const infoStorage = (carro)=>{
     localStorage.setItem("carro",JSON.stringify(carro))
-}
+};
