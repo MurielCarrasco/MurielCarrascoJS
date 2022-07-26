@@ -39,8 +39,8 @@ const mensajeFinal = ()=>{
     formulario.innerHTML= `<div class=" despacho" > 
                            ${cliente} El despacho a ${direccion} Tiene un valor de $5.500 
                            <div class="botonesDespacho" id="confirmacion">
-                           <button type="button" id="despachar" class="btn" onClick="confirmar()" >Confirmar despacho </button>
-                           <button type="reset" class="btn btn-warning" onClick="cancelar()">cancelar compra</button>
+                           <button type="button" id="despachar" class="btn" onClick="confirmar" >Confirmar despacho </button>
+                           <button type="reset" class="btn btn-warning" onClick="cancelar">cancelar compra</button>
                            </div>
                            </div>`;
 };
@@ -65,3 +65,25 @@ function cliente ({nombre, apellido, direccion}){
     console.log(apellido);
     console.log(direccion);
 };
+
+
+//sweet alert 
+function confirmar(){
+    Swal.fire({
+        icon: 'success',
+        title: 'Listo!',
+        text: 'Tu pedido será despachado a la brevedad.',
+        footer: '<a href="./index.html"Seguir comprando</a>'
+      })
+};
+
+function cancelar(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Ooops',
+        text: 'Has cancelado la compra',
+        footer: '<a href="./index.html"volver a página de inicio</a>'
+      })
+};
+
+//falta el como hacer que se vea al conectar los botones

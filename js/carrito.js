@@ -45,6 +45,14 @@ const comprar=(catalogo)=>{                              //con esta función ver
        infoStorage(carro);
        bosquejoCarro()
     };
+    Toastify({
+        text: "Producto agregado al carro!",
+        duration: 3000,
+        gravity: 'bottom',
+        position: 'left',
+        className: 'btn'
+    }).showToast();
+
 };
 
 const eliminarProducto= (catalogo)=>{

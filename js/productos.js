@@ -32,8 +32,17 @@ productos.forEach((producto, catalogo)=>{
               </div>`
        tarjeta.innerHTML=index;
        detalle.appendChild(tarjeta);
+       
 });
-
+/* function comprar(){
+       Toastify({
+              text: "Producto agregado al carro!",
+              duration: 3000,
+              gravity: 'bottom',
+              position: 'left',
+              className: 'btn'
+          }).showToast();
+} */
 
 
 
