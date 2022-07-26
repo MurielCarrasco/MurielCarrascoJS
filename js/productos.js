@@ -5,8 +5,8 @@
                    {id:4 ,descripcion:"Conjunto Cintillo Minnie",  precio: 6900, imagen:"./multimedia/Cintillo-Minnie.jpg"},
                    {id:5 ,descripcion:"Conjunto Cintillo Rosete",  precio: 6900, imagen:"./multimedia/Cintillo-Rosete.jpg"},
                    {id:6 ,descripcion:"Conjunto pinsas Colores",   precio: 4900, imagen:"./multimedia/Pinsas-Colores.jpg"},
-                   {id:7 ,descripcion:"Conjunto pinsas Conejo",    precio: 3900, imagen:"./multimedia/Pinsas-Conejo-Rosado.jpg"},
-                   {id:8 ,descripcion:"Conjunto pinsas Doradas",   precio: 4990, imagen:"./multimedia/Pinsas-doradas.jpg"},
+                   {id:7 ,descripcion:"Conjunto pinsas Conejo",    precio: 3900, imagen:"./multimedia/Pinsas-Conejo-rosado.jpg"},
+                   {id:8 ,descripcion:"Conjunto pinsas Doradas",   precio: 4990, imagen:"./multimedia/Pinsas-Dgit oradas.jpg"},
 ];
 
 function obtenerProductoLS(){
