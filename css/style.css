@@ -119,3 +119,11 @@ footer{
   max-width: 500px;
   padding: .5rem;
 }
+.despacho{
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    margin-left:400px;
+    font-size: 24px;
+    
+}
