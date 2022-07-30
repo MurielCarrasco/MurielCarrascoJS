@@ -34,7 +34,7 @@ productos.forEach((producto, catalogo)=>{
        detalle.appendChild(tarjeta);
        
 });
-/* function comprar(){
+function comprar(){
        Toastify({
               text: "Producto agregado al carro!",
               duration: 3000,
@@ -42,7 +42,7 @@ productos.forEach((producto, catalogo)=>{
               position: 'left',
               className: 'btn'
           }).showToast();
-} */
+}
 
 
 

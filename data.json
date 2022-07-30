@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "comuna": "Talagante",
+        "texto": "Tiene un valor de ",
+        "valor": " 2500"
+    },
+    {
+        "id": 2,
+        "comuna": "El Monte",
+        "texto": "Tiene un valor de ",
+        "valor": " 3000"
+    },
+    {
+        "id": 3,
+        "comuna": "Melipilla",
+        "texto": "Tiene un valor de ",
+        "valor": " 5000"
+    },
+    {
+        "id": 4,
+        "comuna": "Peñaflor",
+        "texto": "Tiene un valor de ",
+        "valor": " 5000"
+    },
+    {
+        "id": 5,
+        "comuna": "Isla de Maipo",
+        "texto": "Tiene un valor de ",
+        "valor": " 4000"
+    }
+]

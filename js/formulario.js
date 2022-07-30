@@ -37,7 +37,7 @@ const mensajeFinal = ()=>{
     let formulario = document.getElementById("formularioCompra");
     console.log(formulario);
     formulario.innerHTML= `<div class=" despacho" > 
-                           ${cliente} El despacho a ${direccion} Tiene un valor de $5.500 
+                           ${cliente} El despacho a ${direccion} Tiene costo. Revisa nuestra tabla de valores.
                            <div class="botonesDespacho" id="confirmacion">
                            <button type="button" id="despachar" class="btn" onClick="confirmar" >Confirmar despacho </button>
                            <button type="reset" class="btn btn-warning" onClick="cancelar">cancelar compra</button>
@@ -68,7 +68,7 @@ function cliente ({nombre, apellido, direccion}){
 
 
 //sweet alert 
-function confirmar(){
+/* function confirmar(){
     Swal.fire({
         icon: 'success',
         title: 'Listo!',
@@ -84,6 +84,30 @@ function cancelar(){
         text: 'Has cancelado la compra',
         footer: '<a href="./index.html"volver a página de inicio</a>'
       })
-};
+}; */
 
 //falta el como hacer que se vea al conectar los botones
+
+//agregando API .json 
+let comunas = [];
+fetch("./data.json")
+  .then((envio) => envio.json())
+  .then((data) => {
+    tablaDatos(data);
+  });
+  
+    const tablaDatos = (data) => {
+        comunas = data;
+        const tabla = document.getElementById("tablaValores");
+        comunas.forEach((comuna) => {
+        let tablaPreciosDespacho = document.createElement("div");
+        tablaPreciosDespacho.classList.add("tablaDespacho");
+        tablaPreciosDespacho.innerHTML = ` 
+        <div class="table-secondary">${comuna.comuna}</div>
+        <div class="table-secondary">${comuna.texto}</div>
+        <div class="table-secondary"> $ ${comuna.valor}</div>
+        `;
+        tabla.appendChild(tablaPreciosDespacho);
+        });
+    };
+  
