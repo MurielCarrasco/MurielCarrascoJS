@@ -89,6 +89,7 @@ footer{
 .btn-extra{
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 .boton-extra{
     background-color:#bf9780 ;

@@ -1,32 +1,50 @@
 [
     {
-        "id": 1,
-        "comuna": "Talagante",
-        "texto": "Tiene un valor de ",
-        "valor": " 2500"
+        "id":1 ,
+        "descripcion":"Conjunto tonos Rosado",     
+        "precio": 6900, 
+        "imagen":"./multimedia/Conjunto-Rosado.jpg"
     },
     {
-        "id": 2,
-        "comuna": "El Monte",
-        "texto": "Tiene un valor de ",
-        "valor": " 3000"
+        "id":2 ,
+        "descripcion":"Conjunto tonos Morado",     
+        "precio": 6900, 
+        "imagen":"./multimedia/Conjunto-Morado.jpg"
     },
     {
-        "id": 3,
-        "comuna": "Melipilla",
-        "texto": "Tiene un valor de ",
-        "valor": " 5000"
+        "id":3 ,
+        "descripcion":"Conjunto tonos Lila",       
+        "precio": 5900, 
+        "imagen":"./multimedia/Conjunto-Lila.jpg"
     },
     {
-        "id": 4,
-        "comuna": "Peñaflor",
-        "texto": "Tiene un valor de ",
-        "valor": " 5000"
+        "id":4 ,
+        "descripcion":"Conjunto Cintillo Minnie",  
+        "precio": 6900, 
+        "imagen":"./multimedia/Cintillo-Minnie.jpg"
     },
     {
-        "id": 5,
-        "comuna": "Isla de Maipo",
-        "texto": "Tiene un valor de ",
-        "valor": " 4000"
+        "id":5 ,
+        "descripcion":"Conjunto Cintillo Rosete",  
+        "precio": 6900, 
+        "imagen":"./multimedia/Cintillo-Rosete.jpg"
+    },
+    {
+        "id":6 ,
+        "descripcion":"Conjunto pinsas Colores",   
+        "precio": 4900, 
+        "imagen":"./multimedia/Pinsas-Colores.jpg"
+    },
+    {
+        "id":7 ,
+        "descripcion":"Conjunto pinsas Conejo",    
+        "precio": 3900, 
+        "imagen":"./multimedia/Pinsas-Conejo-rosado.jpg"
+    },
+    {
+        "id":8 ,
+        "descripcion":"Conjunto pinsas Doradas",   
+        "precio": 4990, 
+        "imagen":"./multimedia/Pinsas-Doradas.jpg"
     }
 ]
