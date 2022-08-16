@@ -98,8 +98,8 @@ const finalizarCompra= ()=>{
     const total= document.getElementsByClassName("totalCompra")[0].innerHTML;       //llamo a una función mediante una clase que cree arriba
     armarCarro.innerHTML="";                                                        // Esto hace que desaparezca el carro para que aparezca el mensaje siguiente
     const compraConcretada=`<div class="compra-concretada">
-                            <p class=""> Estás a un paso de finalizar tu compra, Completa el formulario con tus datos para que los productos sean despachados.</p>
-                            <button class= "btn" id="formulario" onClick="dibujarFormulario()"> FORMULARIO DE ENVÍO </button>
+                            <p class="texto-compra"> Estás a un paso de finalizar tu compra, Completa el formulario con tus datos para que los productos sean despachados.</p>
+                            <button class= "btn btn-compra" id="formulario" onClick="dibujarFormulario()"> FORMULARIO DE ENVÍO </button>
                             </div>`;
     armarCarro.innerHTML = compraConcretada;
 };
@@ -128,7 +128,7 @@ const dibujarFormulario = () => {
     armarCarro.innerHTML = datosformu;             
 };
  
-const mensajeFinal = ()=>{
+const mensajeFinal = () => {
     
     const cliente = document.getElementById("nombre").value;
     const direccion= document.getElementById("direccion").value;
@@ -138,7 +138,7 @@ const mensajeFinal = ()=>{
     Swal.fire({
         position: "center",
         icon: "success",
-        title: `Gracias ${cliente} por tu compra! Los productos serán despachados en ${direccion} en las próximas 48 horas.`,
+        title: `Gracias ${cliente} por tu compra! Los productos serán despachados en ${direccion} en las próximas 48 horas`,
         showConfirmButton: true,
         allowOutsideClick: false,
       });

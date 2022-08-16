@@ -4,7 +4,7 @@ let nav= document.createElement("nav");
 nav.classList="navbar navbar-light  fixed-top";
 nav.innerHTML = `
                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">TU TIENDITA DE ACCESORIOS</a>
+                    <a class="navbar-brand titulo-nav" href="#">TU TIENDITA DE ACCESORIOS</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                     </button>
