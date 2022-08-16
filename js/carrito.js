@@ -48,11 +48,13 @@ const comprarProducto= (catalogo) =>{                              //con esta fu
         position: 'left',
         className: 'btn'
     }).showToast();
+   
 };
 
 let armarCarro= document.getElementById("carro");        // armando el carrito de compra 
-let total = 0;
+
 const bosquejoCarro = () => {
+    let total = 0;
     armarCarro.innerHTML="";
     armarCarro.className = "carro";
     if (carro.length > 0 ){
